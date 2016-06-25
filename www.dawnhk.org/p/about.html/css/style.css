@@ -28,7 +28,7 @@ p {
 }
 **/
 
-main.tab {
+.tab main {
   min-width: 320px;
   max-width: 800px;
   padding: 50px;
@@ -36,17 +36,17 @@ main.tab {
   background: #fff;
 }
 
-section.tab {
+.tab section {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
 }
 
-input.tab {
+.tab input {
   display: none;
 }
 
-label.tab {
+.tab label {
   display: inline-block;
   margin: 0 0 -1px;
   padding: 15px 25px;
@@ -56,34 +56,34 @@ label.tab {
   border: 1px solid transparent;
 }
 
-label.tab:before {
+.tab label:before {
   font-family: fontawesome;
   font-weight: normal;
   margin-right: 10px;
 }
 
-label.tab[for*='1']:before {
+.tab label[for*='1']:before {
   content: '\f1cb';
 }
 
-label.tab[for*='2']:before {
+.tab label[for*='2']:before {
   content: '\f17d';
 }
 
-label.tab[for*='3']:before {
+.tab label[for*='3']:before {
   content: '\f16b';
 }
 
-label.tab[for*='4']:before {
+.tab label[for*='4']:before {
   content: '\f1a9';
 }
 
-label.tab:hover {
+.tab label:hover {
   color: #888;
   cursor: pointer;
 }
 
-input.tab:checked + label {
+.tab input:checked + label {
   color: #555;
   border: 1px solid #ddd;
   border-top: 2px solid orange;
@@ -98,7 +98,7 @@ input.tab:checked + label {
 }
 
 @media screen and (max-width: 650px) {
-  label.tab {
+  .tab label {
     font-size: 0;
   }
 
