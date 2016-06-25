@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 
-/**
 html, body {
   height: 100%;
 }
 
 body {
+  font: 14px/1 'Open Sans', sans-serif;
   color: #555;
   background: #eee;
 }
@@ -26,7 +26,6 @@ p {
   margin: 0 0 20px;
   line-height: 1.5;
 }
-**/
 
 main {
   min-width: 320px;
@@ -36,17 +35,17 @@ main {
   background: #fff;
 }
 
-.tab section {
+section {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
 }
 
-.tab input {
+input {
   display: none;
 }
 
-.tab label {
+label {
   display: inline-block;
   margin: 0 0 -1px;
   padding: 15px 25px;
@@ -56,34 +55,34 @@ main {
   border: 1px solid transparent;
 }
 
-.tab label:before {
+label:before {
   font-family: fontawesome;
   font-weight: normal;
   margin-right: 10px;
 }
 
-.tab label[for*='1']:before {
+label[for*='1']:before {
   content: '\f1cb';
 }
 
-.tab label[for*='2']:before {
+label[for*='2']:before {
   content: '\f17d';
 }
 
-.tab label[for*='3']:before {
+label[for*='3']:before {
   content: '\f16b';
 }
 
-.tab label[for*='4']:before {
+label[for*='4']:before {
   content: '\f1a9';
 }
 
-.tab label:hover {
+label:hover {
   color: #888;
   cursor: pointer;
 }
 
-.tab input:checked + label {
+input:checked + label {
   color: #555;
   border: 1px solid #ddd;
   border-top: 2px solid orange;
@@ -98,7 +97,7 @@ main {
 }
 
 @media screen and (max-width: 650px) {
-  .tab label {
+  label {
     font-size: 0;
   }
 
