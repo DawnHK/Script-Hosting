@@ -6,12 +6,13 @@
   box-sizing: border-box;
 }
 
+/**
 html, body {
   height: 100%;
 }
+**/
 
 body {
-  font: 14px/1 'Open Sans', sans-serif;
   color: #555;
   background: #eee;
 }
