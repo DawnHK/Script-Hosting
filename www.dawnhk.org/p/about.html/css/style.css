@@ -64,11 +64,11 @@ label:before {
 }
 
 label[for*='1']:before {
-  content: '\f1cb';
+  content: '\f129';
 }
 
 label[for*='2']:before {
-  content: '\f17d';
+  content: '\f0c1';
 }
 
 label[for*='3']:before {
