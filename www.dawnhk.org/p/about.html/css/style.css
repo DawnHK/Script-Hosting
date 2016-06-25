@@ -26,27 +26,27 @@ p {
   margin: 0 0 20px;
   line-height: 1.5;
 }
+**/
 
-main {
+main.tab {
   min-width: 320px;
   max-width: 800px;
   padding: 50px;
   margin: 0 auto;
   background: #fff;
 }
-**/
 
-section {
+section.tab {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
 }
 
-input {
+input.tab {
   display: none;
 }
 
-label {
+label.tab {
   display: inline-block;
   margin: 0 0 -1px;
   padding: 15px 25px;
@@ -56,34 +56,34 @@ label {
   border: 1px solid transparent;
 }
 
-label:before {
+label.tab:before {
   font-family: fontawesome;
   font-weight: normal;
   margin-right: 10px;
 }
 
-label[for*='1']:before {
+label.tab[for*='1']:before {
   content: '\f1cb';
 }
 
-label[for*='2']:before {
+label.tab[for*='2']:before {
   content: '\f17d';
 }
 
-label[for*='3']:before {
+label.tab[for*='3']:before {
   content: '\f16b';
 }
 
-label[for*='4']:before {
+label.tab[for*='4']:before {
   content: '\f1a9';
 }
 
-label:hover {
+label.tab:hover {
   color: #888;
   cursor: pointer;
 }
 
-input:checked + label {
+input.tab:checked + label {
   color: #555;
   border: 1px solid #ddd;
   border-top: 2px solid orange;
@@ -98,7 +98,7 @@ input:checked + label {
 }
 
 @media screen and (max-width: 650px) {
-  label {
+  label.tab {
     font-size: 0;
   }
 
